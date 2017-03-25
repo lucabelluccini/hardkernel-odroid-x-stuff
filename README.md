@@ -26,12 +26,15 @@ Other features of the board include:
 
 * [Odroid Forum](http://forum.odroid.com/viewforum.php?f=130)
 * [Hardkernel downloads](http://com.odroid.com/sigong/nf_file_board/nfile_board.php?tag=ODROID-X)
+* [Odroid project hosting](http://oph.mdrjr.net/meveric/)
+* [How to install Ubuntu in EMMC](http://com.odroid.com/sigong/prev_forum/t2440-guide-installing-the-latest-ubuntu-on-odroid-x-emmc.html)
 
 
 ## Images and Distributions
 
 * [Arch Linux](http://nl2.mirror.archlinuxarm.org/os/)
 * [Ubuntu 16.04 LTS](http://odroid.in/ubuntu_16.04lts/)
+* [Odroid game station with XMBC](http://forum.odroid.com/viewtopic.php?f=11&t=2684)
 
 ## Arch Linux
 
