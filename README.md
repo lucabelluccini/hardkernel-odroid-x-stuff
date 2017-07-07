@@ -179,19 +179,32 @@ An alternative procedure is detailed [here](https://gist.github.com/bullshit/105
 
 ### Run MotionEye in Docker
 
+Follow the [guide](https://github.com/ccrisan/motioneye/wiki/Install-in-Docker):
+
 ```
 cd
 pacman -S git
-# Change the "extra/Dockerfile" to use the following base image "armv7/armhf-ubuntu:15.04"
-# Follow https://github.com/ccrisan/motioneye/wiki/Install-in-Docker
+```
+
+Edit the ```extra/Dockerfile``` to use the following base image ```armv7/armhf-ubuntu:15.04```
+
+```
 git clone https://github.com/ccrisan/motioneye.git
 cd motioneye && docker build -f extra/Dockerfile -t motioneye .
+```
 
-# To identify the USB webcams and their respective device under /dev/video
+Wait a little...
+
+To identify the USB webcams and their respective device under /dev/video
+
+```
 pacman -S v4l-utils
 v4l2-ctl --list-devices
+```
 
-# Example with 2 webcams
+Run a docker instance with 2 webcams...
+
+```
 docker rm -f motioneye ; docker run -it --name=motioneye \
         --device=/dev/video8:/dev/video0 \
 		--device=/dev/video9:/dev/video1 \
@@ -203,7 +216,8 @@ docker rm -f motioneye ; docker run -it --name=motioneye \
         -v $PWD:/usr/local/src/motioneye \
         --restart=always \
         motioneye
+```
 
-# Lower the resolution if you face errors such as " WARNING: Connect error on fd 21: ECONNREFUSED"
-# You can troubleshoot checking with "docker exec -it <docker instance id> dmesg"
-# If you get "uvcvideo: Failed to submit URB 0 (-28)"
+Lower the resolution if you face errors such as ```WARNING: Connect error on fd 21: ECONNREFUSED```.
+You can troubleshoot checking with ```docker exec -it <docker instance id> dmesg```
+If you get ```uvcvideo: Failed to submit URB 0 (-28)```, it's probably a bandwidth issue.
