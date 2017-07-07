@@ -165,3 +165,45 @@ mount -l | grep -i mmc
     2.  Open _/boot/uEnv.txt_ in your favorite editor.
     3.  Uncomment the _mmcroot_ line, change _/dev/mmcblk0p1_ to _/dev/mmcblk1p1_, and save the file.
     4.  Power off the board, connect the SD card, and boot the board again. The SD card will be available under _/dev/mmcblk0_ now.
+
+## How-To Section
+
+### How to install docker
+
+Follow the guide on how to install docker on [ARMv7](https://github.com/umiddelb/armhf/wiki/Installing,-running,-using-docker-on-armhf-(ARMv7)-devices)
+* Run ```pacman -S docker```
+* Run ```zcat /proc/config.gz > /tmp/.config```
+* Verify ```curl -L https://raw.githubusercontent.com/docker/docker/master/contrib/check-config.sh | /bin/bash /dev/stdin /tmp/.config``` and ensure all mandatory prerequisites are present
+
+An alternative procedure is detailed [here](https://gist.github.com/bullshit/10502689).
+
+### Run MotionEye in Docker
+
+```
+cd
+pacman -S git
+# Change the "extra/Dockerfile" to use the following base image "armv7/armhf-ubuntu:15.04"
+# Follow https://github.com/ccrisan/motioneye/wiki/Install-in-Docker
+git clone https://github.com/ccrisan/motioneye.git
+cd motioneye && docker build -f extra/Dockerfile -t motioneye .
+
+# To identify the USB webcams and their respective device under /dev/video
+pacman -S v4l-utils
+v4l2-ctl --list-devices
+
+# Example with 2 webcams
+docker rm -f motioneye ; docker run -it --name=motioneye \
+        --device=/dev/video8:/dev/video0 \
+		--device=/dev/video9:/dev/video1 \
+        -p 8081:8081 \
+        -p 8765:8765 \
+        -e TIMEZONE="Europe/Paris" \
+        -v /mnt/motioneye/media:/media \
+        -v /mnt/motioneye/config:/etc/motioneye \
+        -v $PWD:/usr/local/src/motioneye \
+        --restart=always \
+        motioneye
+
+# Lower the resolution if you face errors such as " WARNING: Connect error on fd 21: ECONNREFUSED"
+# You can troubleshoot checking with "docker exec -it <docker instance id> dmesg"
+# If you get "uvcvideo: Failed to submit URB 0 (-28)"
