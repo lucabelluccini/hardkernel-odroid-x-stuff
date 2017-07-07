@@ -172,6 +172,14 @@ mount -l | grep -i mmc
 
 ## How-To Section
 
+### Update system packages
+
+```
+pacman -Syuw
+rm /etc/ssl/certs/ca-certificates.crt
+pacman -Su
+```
+
 ### How to install docker
 
 Follow the guide on how to install docker on [ARMv7](https://github.com/umiddelb/armhf/wiki/Installing,-running,-using-docker-on-armhf-(ARMv7)-devices)
