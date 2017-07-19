@@ -272,6 +272,59 @@ T_RST        04 03    SDA
 BL_EN        02 01    T_INT
 ```
 
+|-----|--------------|-------------|--------------------------------------------------|
+| 1   | T_INT        | XEINT27     | GPX3[3]/WAKEUP_INT3[3]/KP_ROW11/ALV_DBG23        |
+| 2   | BL_EN        | UXuRTSn[2]  | GPA1[3]/UART_2_RTSn/I2C_3_SCL                    |
+| 3   | SDA          | Xi2 c1SDA   | GPD1[2]/I2C_1_SDA                                |
+| 4   | T_RST        | XEINT17     | GPX2[1]/WAKEUP_INT2[1]/KP_ROW[1]/ALV_DBG13       |
+| 5   | SCL          | IXi2 c1SCL  | GPD1[3]/I2C_1_SCL                                |
+| 6   | SPI_1.CLK    | XspiCLK[1]  | GPB[4]/SPI_1_CLK/IEM_SCLK                        |
+| 7   | T_SCL        | XspiMOSI[0] | GPB[3]/SPI_0_MOSI/I2C_5_SCL                      |
+| 8   | T_SDA        | XspiMISO[0] | GPB[2]/SPI_0_MISO/I2C_5_SDA                      |
+| 9   | XE.INT12     | XEINT12     | GPX1[4]/WAKEUP_INT1[4]/KP_COL[4]/ALV_DBG[8]      |
+| 10  | SPI_1.CSN    | XspiCSn[1]  | GPB[5]/SPI_1_nSS/IEM_SPWI                        |
+| 11  | SPI_1.MOSI   | XspiMOSI[1] | GPB[7]/SPI_1_MOSI                                |
+| 12  | VDDQ_LCD     |             |                                                  |
+| 13  | PWM_BRT      | XpwmTOUT[1] | GPD0[1]/TOUT_1/LCD_PWM                           |
+| 14  | RXD          | XuRXD[3]    | GPA1[4]/UART_3_RXD/UART_AUDIO_RXD                |
+| 15  | SPI_1.MISO   | XspiMISO[1] | GPB[6]/SPI_1_MISO                                |
+| 16  | TXD          | XuTXD[3]    | GPA1[1]/UART_3_TXD/UART_AUDIO_TXD                |
+| 17  | VD19         | XvVD19      | GPF2[7]/LCD_VD19                                 |
+| 18  | VD21         | XvVD21      | GPF3[1]/LCD_VD21                                 |
+| 19  | VD2          | XvVD[2]     | GPF0[6]/LCD_VD[2]                                |
+| 20  | VD8          | XvVD[8]     | GPF1[4]/LCD_VD[8]                                |
+| 21  | VD15         | XvVD15      | GPF2[3]/LCD_VD15                                 |
+| 22  | VD0          | XvVD[0]     | GPF0[4]/LCD_VD[0]                                |
+| 23  | VCLK         | XvVCLK      | GPF0[3]/LCD_VCLK                                 |
+| 24  | VD7          | XvVD[7]     | GPF1[3]/LCD_VD[7]                                |
+| 25  | VD18         | XvVD18      | GPF2[6]/LCD_VD18                                 |
+| 26  | VD11         | XvVD11      | GPF1[7]/LCD_VD11                                 |
+| 27  | VSYNC        | XvVSYNC     | GPF0[1]/LCD_VSYNC                                |
+| 28  | VD6          | XvVD[6]     | GPF1[2]/LCD_VD[6]                                |
+| 29  | VDEN         | XvVDEN      | GPF0[2]/LCD_VDEN                                 |
+| 30  | VD20         | XvVD20      | GPF3[0]/LCD_VD20                                 |
+| 31  | HSYNC        | XvHSYNC     | GPF0[0]/LCD_HSYNC                                |
+| 32  | GND          | Ground      |                                                  |
+| 33  | VD3          | XvVD[3]     | GPF0[7]/LCD_VD[3]                                |
+| 34  | VD12         | XvVD12      | GPF2[0]/LCD_VD12                                 |
+| 35  | VD5          | XvVD[5]     | GPF1[1]/LCD_VD[5]                                |
+| 36  | VD10         | XvVD10      | GPF1[6]/LCD_VD10                                 |
+| 37  | VD14         | XvVD14      | GPF2[2]/LCD_VD14                                 |
+| 38  | VD17         | XvVD17      | GPF2[5]/LCD_VD17                                 |
+| 39  | VD9          | XvVD[9]     | GPF1[5]/LCD_VD[9]                                |
+| 40  | VD23         | XvVD23      | GPF3[3]/LCD_VD23                                 |
+| 41  | VD1          | XvVD[1]     | GPF0[5]/LCD_VD[1]                                |
+| 42  | VD4          | XvVD[4]     | GPF1[0]/LCD_VD[4]                                |
+| 43  | VD22         | XvVD22      | GPF3[2]/LCD_VD22                                 |
+| 44  | VD13         | XvVD13      | GPF2[1]/LCD_VD13                                 |
+| 45  | VD16         | XvVD16      | GPF2[4]/LCD_VD16                                 |
+| 46  | SYS          | DC Jack +5V |                                                  |
+| 47  | ADC.AIN2     | XadcAIN[2]  | XadcAIN[2]                                       |
+| 48  | VDD_IO       | +1.8 V      |                                                  |
+| 49  | ADC.AIN3     | XadcAIN[3]  | XadcAIN[3]                                       |
+| 50  | GND          | Ground      |                                                  |
+|-----|--------------|-------------|--------------------------------------------------|
+
 ### Run MotionEye in Docker
 
 Follow the [guide](https://github.com/ccrisan/motioneye/wiki/Install-in-Docker):
