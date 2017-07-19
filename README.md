@@ -271,6 +271,9 @@ SPI_1_CLK    06 05    SCL
 T_RST        04 03    SDA
 BL_EN        02 01    T_INT
 ```
+
+The table below is for Odroid X2
+
 |PIN  | Usage        | Exynos4412  | Function                                         |
 |-----|--------------|-------------|--------------------------------------------------|
 | 1   | T_INT        | XEINT27     | GPX3[3]/WAKEUP_INT3[3]/KP_ROW11/ALV_DBG23        |
