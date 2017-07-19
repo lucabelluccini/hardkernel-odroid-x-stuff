@@ -189,6 +189,86 @@ Follow the guide on how to install docker on [ARMv7](https://github.com/umiddelb
 
 An alternative procedure is detailed [here](https://gist.github.com/bullshit/10502689).
 
+### GPIO Pinout
+
+If the kernel support for GPIO is enabled, you should have ```/sys/class/gpio/```.
+To print the labels of each endpoint run ```for file in gpio*; do echo -n "$file - ";cat $file/label; done```.
+
+```
+root@alarm gpio]# for file in gpio*; do echo -n "$file - ";cat $file/label; done
+gpiochip0 - gpa0
+gpiochip104 - gpk3
+gpiochip111 - gpl0
+gpiochip118 - gpl1
+gpiochip120 - gpl2
+gpiochip128 - gpm0
+gpiochip136 - gpm1
+gpiochip14 - gpb
+gpiochip143 - gpm2
+gpiochip148 - gpm3
+gpiochip156 - gpm4
+gpiochip164 - gpy0
+gpiochip170 - gpy1
+gpiochip174 - gpy2
+gpiochip180 - gpy3
+gpiochip188 - gpy4
+gpiochip196 - gpy5
+gpiochip204 - gpy6
+gpiochip212 - gpx0
+gpiochip22 - gpc0
+gpiochip220 - gpx1
+gpiochip228 - gpx2
+gpiochip236 - gpx3
+gpiochip244 - gpz
+gpiochip251 - gpv0
+gpiochip259 - gpv1
+gpiochip267 - gpv2
+gpiochip27 - gpc1
+gpiochip275 - gpv3
+gpiochip283 - gpv4
+gpiochip32 - gpd0
+gpiochip36 - gpd1
+gpiochip40 - gpf0
+gpiochip48 - gpf1
+gpiochip56 - gpf2
+gpiochip64 - gpf3
+gpiochip70 - gpj0
+gpiochip78 - gpj1
+gpiochip8 - gpa1
+gpiochip83 - gpk0
+gpiochip90 - gpk1
+gpiochip97 - gpk2
+```
+
+```
+Pinout
+GND          50 49    ADC_AIN3
+VDD_IO       48 47    ADC_AIN2
+SYS          46 45    VD16
+VD13         44 43    VD22
+VD4          42 41    VD1
+VD23         40 39    VD9
+VD17         38 37    VD14
+VD10         36 35    VD5
+VD12         34 33    VD3
+GND          32 31    HSYNC
+VD20         30 29    VDEN
+VD6          28 27    VSYNC
+VD11         26 25    VD18
+VD7          24 23    VCLK
+VD0          22 21    VD15
+VD8          20 19    VD2
+VD21         18 17    VD19
+TXD          16 15    SPI_1_MISO
+RXD          14 13    PWM_BRT
+VDDQ_LCD     12 11    SPI_1_MOSI
+SPI_1_CSN    10 09    XE_INT12
+T_SDA        08 07    T_SCL
+SPI_1_CLK    06 05    SCL
+T_RST        04 03    SDA
+BL_EN        02 01    T_INT
+```
+
 ### Run MotionEye in Docker
 
 Follow the [guide](https://github.com/ccrisan/motioneye/wiki/Install-in-Docker):
