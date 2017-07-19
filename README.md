@@ -3,6 +3,9 @@ It has been copied for archive purposes.
 
 # ODROID-X
 
+![](201209072304519403.jpg)
+![](201209072304596007.jpg)
+
 The ODROID-X is a very low cost, high performance development platform based on an Exynos 4412 ARM Cortex-A9 Quad Core 1.4GHz CPU. It has 6 USB 2.0 ports, micro HDMI, The board has several accessories available through Hardkernel such as 10.1" and 14" LVDS LCDs (with adapters), Wifi and Bluetooth adapters, 1.8v serial adapter (recommended if you're going to be any debugging...actually, it's recommended anyway so you won't have to pay shipping twice when you realize you need it later), and an eMMC storage module. They also have a camera module, but currently it does not work with Linux.
 
 Other features of the board include:
