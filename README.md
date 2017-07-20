@@ -244,7 +244,7 @@ gpiochip97 - gpk2
 ```
 
 ```
-Pinout
+Pinout from schematics
 GND          50 49    ADC_AIN3
 VDD_IO       48 47    ADC_AIN2
 SYS          46 45    VD16
@@ -272,7 +272,7 @@ T_RST        04 03    SDA
 BL_EN        02 01    T_INT
 ```
 
-The table below is for Odroid X2
+The table below is for Odroid X2 from [this page](http://odroid.com/dokuwiki/doku.php?id=en:odroid-xq#expansion_header_details_of_base_board).
 
 | PIN# | Expansion net name for ODROID-X | Pin name of Exynos4412 | Function | Description |
 |------|---------------------------------|------------------------|----------|-------------|
