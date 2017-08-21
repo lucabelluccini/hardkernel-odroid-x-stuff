@@ -327,6 +327,13 @@ The table below is for Odroid X2 from [this page](http://odroid.com/dokuwiki/dok
 | 49 | ADC.AIN3 | XadcAIN[3] | XadcAIN[3] |  |
 | 50 | GND | Ground |  |  |
 
+### Upgrade ALARM distribution
+
+```
+pacman -Syuw
+rm /etc/ssl/certs/ca-certificates.crt
+pacman -Su
+```
 
 ### Run MotionEye in Docker
 
