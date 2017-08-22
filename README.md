@@ -71,6 +71,8 @@ Available at [Odroid Magazine](http://magazine.odroid.com/)
 * [Odroid Magazine 04/2017](http://magazine.odroid.com/assets/201703/pdf/ODROID-Magazine-201704.pdf)
 * [Odroid Magazine 05/2017](http://magazine.odroid.com/assets/201703/pdf/ODROID-Magazine-201705.pdf)
 * [Odroid Magazine 06/2017](http://magazine.odroid.com/assets/201703/pdf/ODROID-Magazine-201706.pdf)
+* [Odroid Magazine 07/2017](http://magazine.odroid.com/assets/201703/pdf/ODROID-Magazine-201707.pdf)
+* [Odroid Magazine 08/2017](http://magazine.odroid.com/assets/201703/pdf/ODROID-Magazine-201708.pdf)
 
 
 ## Links
