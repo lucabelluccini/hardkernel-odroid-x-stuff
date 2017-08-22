@@ -1,5 +1,5 @@
 All rights are of their respective owners.
-It has been copied for archive purposes.
+Some sections have been copied for archive purposes.
 
 # ODROID-X
 
