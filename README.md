@@ -346,6 +346,13 @@ rm /etc/ssl/certs/ca-certificates.crt
 pacman -Su
 ```
 
+### Run portainer
+
+```
+$ docker volume create portainer_data
+$ docker run --restart unless-stopped -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer:arm
+```
+
 ### Run MotionEye in Docker
 
 Follow the [guide](https://github.com/ccrisan/motioneye/wiki/Install-in-Docker):
