@@ -91,6 +91,7 @@ Available at [Odroid Magazine](http://magazine.odroid.com/)
 * [Hardkernel downloads](http://com.odroid.com/sigong/nf_file_board/nfile_board.php?tag=ODROID-X)
 * [Odroid project hosting](http://oph.mdrjr.net/meveric/)
 * [How to install Ubuntu in EMMC](http://com.odroid.com/sigong/prev_forum/t2440-guide-installing-the-latest-ubuntu-on-odroid-x-emmc.html)
+* [U-Boot and hw](https://wiki.odroid.com/old_product/odroid-x_u_q/odroid-xq)
 
 
 ## Images and Distributions
