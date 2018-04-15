@@ -92,7 +92,7 @@ Available at [Odroid Magazine](http://magazine.odroid.com/)
 * [Odroid project hosting](http://oph.mdrjr.net/meveric/)
 * [How to install Ubuntu in EMMC](http://com.odroid.com/sigong/prev_forum/t2440-guide-installing-the-latest-ubuntu-on-odroid-x-emmc.html)
 * [U-Boot and hw](https://wiki.odroid.com/old_product/odroid-x_u_q/odroid-xq)
-
+* [Useful links for Linux Arch on ARM](https://github.com/phortx/Raspberry-Pi-Setup-Guide)
 
 ## Images and Distributions
 
