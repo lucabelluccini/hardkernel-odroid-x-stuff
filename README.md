@@ -190,8 +190,24 @@ mount -l | grep -i mmc
 
 ```
 pacman -Syuw
-rm /etc/ssl/certs/ca-certificates.crt
 pacman -Su
+pacman-key --init
+pacman-key --populate archlinuxarm
+sed -i 's/#Color/Color/' /etc/pacman.conf # to addd color to pacman
+```
+
+### Enable NTPD as no RTC is present
+```
+timedatectl set-local-rtc 0
+nano /etc/timezone # set Europe/Paris
+```
+
+### Setup WiFi
+```
+pacman -Sy netctl wpa_actiond dialog
+wifi-menu
+systemctl enable netctl-auto@wlan0-<ssid>
+iwconfig wlan0 power off # in case random disconnections occur
 ```
 
 ### How to install docker
