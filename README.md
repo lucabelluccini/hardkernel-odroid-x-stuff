@@ -204,7 +204,11 @@ nano /etc/timezone # set Europe/Paris
 
 ### Setup WiFi
 ```
-pacman -Sy netctl wpa_actiond dialog
+pacman -Sy netctl wpa_actiond dialog crda
+iw reg set FR
+iw reg get
+# edit the /etc/conf.d/wireless-regdom
+# add "Country=<code>" in the netctl profile
 wifi-menu
 systemctl enable netctl-auto@wlan0-<ssid>
 iwconfig wlan0 power off # in case random disconnections occur
