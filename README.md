@@ -102,7 +102,9 @@ Available at [Odroid Magazine](http://magazine.odroid.com/)
 
 ## Arch Linux
 
-The following text has been replicated from [Arch Linux documentation](https://archlinuxarm.org/platforms/armv7/samsung/odroid-x).
+The following text has been replicated from [Arch Linux documentation](https://archlinuxarm.org/platforms/armv7/samsung/odroid-x)
+
+The board [PKGBUILD](https://github.com/archlinuxarm/PKGBUILDs/blob/master/core/linux-odroid/PKGBUILD).
 
 ### SD Card Creation
 
