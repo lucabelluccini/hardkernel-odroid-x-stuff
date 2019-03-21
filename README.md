@@ -94,6 +94,7 @@ Available at [Odroid Magazine](http://magazine.odroid.com/)
 * [U-Boot and hw](https://wiki.odroid.com/old_product/odroid-x_u_q/odroid-xq)
 * [Useful links for Linux Arch on ARM](https://github.com/phortx/Raspberry-Pi-Setup-Guide)
 * [Linux-Exynos 4412](http://linux-exynos.org/wiki/Samsung_Exynos_4412)
+* [Linux-Samsung-SOC Patchwork](https://patchwork.kernel.org/project/linux-samsung-soc/)
 
 ## Images and Distributions
 
