@@ -93,6 +93,7 @@ Available at [Odroid Magazine](http://magazine.odroid.com/)
 * [How to install Ubuntu in EMMC](http://com.odroid.com/sigong/prev_forum/t2440-guide-installing-the-latest-ubuntu-on-odroid-x-emmc.html)
 * [U-Boot and hw](https://wiki.odroid.com/old_product/odroid-x_u_q/odroid-xq)
 * [Useful links for Linux Arch on ARM](https://github.com/phortx/Raspberry-Pi-Setup-Guide)
+* [Linux-Exynos 4412](http://linux-exynos.org/wiki/Samsung_Exynos_4412)
 
 ## Images and Distributions
 
