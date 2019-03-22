@@ -100,6 +100,7 @@ Available at [Odroid Magazine](http://magazine.odroid.com/)
 
 * [Arch Linux](http://nl2.mirror.archlinuxarm.org/os/)
 * [Ubuntu 16.04 LTS](http://odroid.in/ubuntu_16.04lts/)
+* [Debian](https://forum.odroid.com/viewtopic.php?f=23&t=19281)
 * [Odroid game station with XMBC](http://forum.odroid.com/viewtopic.php?f=11&t=2684)
 
 ## Arch Linux
