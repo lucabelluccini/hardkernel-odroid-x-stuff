@@ -95,6 +95,8 @@ Available at [Odroid Magazine](http://magazine.odroid.com/)
 * [Useful links for Linux Arch on ARM](https://github.com/phortx/Raspberry-Pi-Setup-Guide)
 * [Linux-Exynos 4412](http://linux-exynos.org/wiki/Samsung_Exynos_4412)
 * [Linux-Samsung-SOC Patchwork](https://patchwork.kernel.org/project/linux-samsung-soc/)
+* [Exynos Mainline (Tizen) TODO](https://wiki.tizen.org/Exynos_Mainline_Kernel_TODO)
+* [Odroid Forum - Playing with upstream kernel](https://forum.odroid.com/viewtopic.php?f=55&t=3691&p=249903#p249903)
 
 ## Images and Distributions
 
